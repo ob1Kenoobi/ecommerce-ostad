@@ -1,12 +1,85 @@
-# React + Vite
+# 🛍️ React E-Commerce App with Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a fully responsive e-commerce web application built with **React** and **Tailwind CSS**, integrating a REST API provided for Ostad's Module 10 assignment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 **Deployed URL:** _[Your Vercel/Netlify link here]_
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 **GitHub Repository:** _[Your GitHub repo link here]_
+
+---
+
+## 📦 Features
+
+- 🛒 View all products from API
+- 🔍 View product details
+- ➕ Add products to cart
+- ❌ Remove items from cart
+- 🛠 Admin Panel for:
+  - ➕ Create product
+  - ❌ Delete product
+- ⚡ Fully responsive design using Tailwind CSS
+- ✅ Clean and modular React components
+
+---
+
+## 📁 Project Structure
+
+src/
+├── api/ # API integration (CRUD & cart)
+├── components/ # Reusable components (Header, Footer, Cards)
+├── pages/ # Pages: Home, ProductDetails, CartPage, Admin
+└── App.jsx # App routing
+
+---
+
+## 🧑‍💻 Technologies Used
+
+- **React**
+- **Tailwind CSS**
+- **Axios**
+- **React Router**
+- **Render-hosted REST API**
+- Deployed on **Vercel** or **Netlify**
+
+---
+
+## 🛠 Setup & Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+
+   ```
+
+3. Add a valid JWT token in src/api/api.js:
+
+   ```bash
+   const TOKEN = "<YOUR_VALID_JWT_TOKEN>";
+
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+
+   ```
+
+## 📌 Notes
+
+<ul>
+  <li>If API returns jwt expired, generate a new token via Postman.</li>
+  <li>You can add a basic login mechanism if needed to dynamically fetch token.</li>
+</ul>
