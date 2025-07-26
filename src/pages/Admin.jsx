@@ -40,13 +40,15 @@ export default function Admin() {
   };
 
   return (
-    <div className="container py-10 mx-auto">
-      <h1 className="mb-6 text-2xl font-bold">Admin Panel</h1>
-      <div className="mb-8">
-        <h2 className="mb-2 text-lg font-semibold">Create Product</h2>
+    <div className="container px-4 py-10 mx-auto md:px-8">
+      <h1 className="mb-8 text-3xl font-bold text-center text-gray-800">
+        Admin Panel
+      </h1>
+      <div className="mb-10">
+        <h2 className="mb-4 text-xl font-semibold">Create Product</h2>
         <ProductForm onSubmit={handleCreate} />
       </div>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {products.map((product) => (
           <ProductCard
             key={product._id}
@@ -54,6 +56,11 @@ export default function Admin() {
             onDelete={handleDelete}
           />
         ))}
+        {products.length === 0 && (
+          <p className="text-center text-gray-500 col-span-full">
+            No products found.
+          </p>
+        )}
       </div>
     </div>
   );

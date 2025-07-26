@@ -32,17 +32,24 @@ export default function CartPage() {
     : 0;
 
   return (
-    <div className="container py-10 mx-auto">
-      <h1 className="mb-6 text-2xl font-bold">Your Cart</h1>
+    <div className="container px-4 py-10 mx-auto md:px-8">
+      <h1 className="mb-6 text-3xl font-bold text-center text-gray-800">
+        Your Cart
+      </h1>
       <div className="space-y-4">
         {Array.isArray(cart) &&
           cart.map((item) => (
             <CartItem key={item._id} item={item} onRemove={handleRemove} />
           ))}
+        {cart.length === 0 && (
+          <p className="text-center text-gray-500">Your cart is empty.</p>
+        )}
       </div>
-      <div className="mt-4 text-xl font-semibold text-right">
-        Total: ${total.toFixed(2)}
-      </div>
+      {cart.length > 0 && (
+        <div className="mt-6 text-xl font-semibold text-right text-gray-700">
+          Total: ${total.toFixed(2)}
+        </div>
+      )}
     </div>
   );
 }
