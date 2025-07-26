@@ -6,11 +6,25 @@ This is a fully responsive e-commerce web application built with **React** and *
 
 ## 🚀 Live Demo
 
-🔗 **Deployed URL:** _[Your Vercel/Netlify link here]_
+🔗 **Deployed URL:** _[[Netlify link here](https://regal-selkie-430bed.netlify.app/)]_
 
 🔗 **GitHub Repository:** _[Your GitHub repo link here]_
 
 ---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home Page](./public/screenshots/Home.png)
+
+### 🛒 Cart Page
+
+![Cart Page](./public/screenshots/Cart.png)
+
+### 🛠 Admin Panel
+
+![Admin Panel](./public/screenshots/Admin.png)
 
 ## 📦 Features
 
