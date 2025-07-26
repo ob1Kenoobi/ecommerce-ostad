@@ -6,9 +6,9 @@ This is a fully responsive e-commerce web application built with **React** and *
 
 ## 🚀 Live Demo
 
-🔗 **Deployed URL:** _[[Netlify link here](https://regal-selkie-430bed.netlify.app/)]_
+🔗 **Deployed URL:** _[[Netlify link](https://regal-selkie-430bed.netlify.app/)]_
 
-🔗 **GitHub Repository:** _[Your GitHub repo link here]_
+🔗 **GitHub Repository:** _[[GitHub repo link](https://github.com/ob1Kenoobi/ecommerce-ostad.git)]_
 
 ---
 
